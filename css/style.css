@@ -50,11 +50,10 @@ body{
 }
 
 .header .links .icon{
+    width: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 30px;
-    
 }
 .header .links .icon span{
     background-color: #330000;
@@ -82,6 +81,7 @@ body{
     min-width: 200px;
     top: calc(100% + 15px);
     display: none;
+    z-index: 1;
 }
 
 .header .links ul::before{
@@ -92,6 +92,7 @@ body{
     position: absolute;
     right: 1px;
     top: -20px;
+    
 }
 .header .links:hover ul {
     display: block;
@@ -109,4 +110,36 @@ body{
 }
 .header .links ul li:not(:last-child){
     border-bottom: #363232 solid 1px;
+}
+/* end header */
+/*  start ramadan section */
+.ramadan{
+    background-image: url(../img/projTest.jpg);
+    background-size: cover;
+    height: calc(93.5vh - 64px);
+    position: relative;
+}
+
+.ramadan .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+}
+
+.ramadan .intro-text h1 {
+    margin: 0;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #10cab7;
+}
+
+.ramadan .intro-text p {
+    color: #10cab7;
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 2;
 }
